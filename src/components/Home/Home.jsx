@@ -1,11 +1,16 @@
 import React from 'react';
+import Navbar from '../Navbar/Navbar';
+import { Outlet } from 'react-router';
+import Footer from '../../Footer/Footer';
 
-const Navbar = () => {
+const Home = () => {
     return (
         <div>
-            <h3>i am Home</h3>
+            <Navbar></Navbar>
+            <Outlet></Outlet>
+            <Footer></Footer>
         </div>
     );
 };
 
-export default Navbar;
+export default Home;

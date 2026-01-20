@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from './../../assets/react.svg'
 
 const Navbar = () => {
     return (
@@ -10,38 +11,32 @@ const Navbar = () => {
       </div>
       <ul
         tabIndex="-1"
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a>Item 1</a></li>
-        <li>
-          <a>Parent</a>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </li>
-        <li><a>Item 3</a></li>
+        className="menu menu-sm dropdown-content bg-base-100 rounded-box  mt-3 w-52 p-2 shadow">
+        <li><a>Home</a></li>
+        
+        
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    <a className="btn btn-ghost text-sm md:text-xl">ToyTopia</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><a>Item 1</a></li>
-      <li>
-        <details>
-          <summary>Parent</summary>
-          <ul className="p-2 bg-base-100 w-40 z-1">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </details>
-      </li>
-      <li><a>Item 3</a></li>
+      <li className='md:mr-10'><a className='btn btn-ghost'>Home</a></li>
+      
+      <li><a></a></li>
     </ul>
   </div>
+  
   <div className="navbar-end">
-    <a className="btn">Button</a>
+    <div>
+  <a className="btn btn-ghost mr-3 flex items-center gap-2">
+    <img src={logo} alt="logo" className="w-8 h-8 rounded-full" />
+    <span>My Profile</span>
+  </a>
+</div>
+    <a className='btn btn-primary btn-ghost'>Login</a>
   </div>
+  
 </div>
     );
 };
