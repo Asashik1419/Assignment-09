@@ -1,0 +1,110 @@
+[
+  {
+    "toyId": 1,
+    "toyName": "LEGO Classic Large Creative Brick Box",
+    "sellerName": "LEGO Official",
+    "sellerEmail": "support@lego.com",
+    "price": 49.99,
+    "rating": 4.8,
+    "availableQuantity": 120,
+    "description": "A big box of colorful LEGO bricks to build anything you can imagine — classic open-ended play.",
+    "pictureURL": "https://i.ibb.co.com/qF2DSRBX/toy-3370202-1920.jpg",
+    "subCategory": "Building Blocks"
+  },
+  {
+    "toyId": 2,
+    "toyName": "Hot Wheels 5-Pack Cars",
+    "sellerName": "Mattel Hot Wheels Store",
+    "sellerEmail": "service@hotwheels.com",
+    "price": 19.99,
+    "rating": 4.6,
+    "availableQuantity": 200,
+    "description": "Set of 5 die-cast Hot Wheels vehicles for racing and collecting fun. Perfect for kids who love speed and tracks.",
+    "pictureURL": "https://i.ibb.co.com/FksKBXPQ/car-2421432-1920.jpg",
+    "subCategory": "Vehicles"
+  },
+  {
+    "toyId": 3,
+    "toyName": "Barbie Dreamhouse Doll",
+    "sellerName": "Mattel Barbie Shop",
+    "sellerEmail": "support@barbie.com",
+    "price": 89.99,
+    "rating": 4.7,
+    "availableQuantity": 85,
+    "description": "Barbie Dreamhouse with accessories and furniture — offers endless imaginative play and storytelling.",
+    "pictureURL": "https://i.ibb.co.com/WJgCVcK/toy-4944863-1920.jpg",
+    "subCategory": "Dolls"
+  },
+  {
+    "toyId": 4,
+    "toyName": "FurReal Friends Interactive Pet",
+    "sellerName": "Hasbro FurReal",
+    "sellerEmail": "info@hasbro.com",
+    "price": 54.99,
+    "rating": 4.5,
+    "availableQuantity": 60,
+    "description": "Interactive robotic pet that moves and makes sounds — part of the popular FurReal Friends line. Great for animal lovers.",
+    "pictureURL": "https://i.ibb.co.com/bgwgSmPG/toy-1802372-1920.jpg",
+    "subCategory": "Robotic Pets"
+  },
+  {
+    "toyId": 5,
+    "toyName": "Mr. Potato Head Classic Toy",
+    "sellerName": "Hasbro Family Toys",
+    "sellerEmail": "contact@hasbro.com",
+    "price": 14.99,
+    "rating": 4.4,
+    "availableQuantity": 150,
+    "description": "Fun classic toy where kids can mix and match faces and accessories — a timeless play favorite. Invented in 1952. :contentReference[oaicite:1]{index=1}",
+    "pictureURL": "https://i.ibb.co.com/1YCxtbq5/child-6943902-1920.jpg",
+    "subCategory": "Action Figures"
+  },
+  {
+    "toyId": 6,
+    "toyName": "UNO Classic Card Game",
+    "sellerName": "Mattel Games",
+    "sellerEmail": "support@mattel.com",
+    "price": 9.99,
+    "rating": 4.7,
+    "availableQuantity": 310,
+    "description": "The classic family card game UNO — easy to learn and fun for all ages.",
+    "pictureURL": "https://i.ibb.co.com/Djq8CR6/robot-7269250-1920.jpg",
+    "subCategory": "Board & Card Games"
+  },
+  {
+    "toyId": 7,
+    "toyName": "Nerf N-Strike Elite Blaster",
+    "sellerName": "Hasbro Nerf",
+    "sellerEmail": "support@nerf.com",
+    "price": 29.99,
+    "rating": 4.5,
+    "availableQuantity": 95,
+    "description": "Classic Nerf foam dart blaster set for safe indoor/outdoor play and target practice.",
+    "pictureURL": "https://i.ibb.co.com/TMJt77NP/robot-7269249-1920.jpg",
+    "subCategory": "Blasters"
+  },
+  {
+    "toyId": 8,
+    "toyName": "Monopoly Classic Board Game",
+    "sellerName": "Hasbro Games",
+    "sellerEmail": "support@hasbro.com",
+    "price": 19.99,
+    "rating": 4.6,
+    "availableQuantity": 180,
+    "description": "The iconic real-estate trading board game — great for family game nights.",
+    "pictureURL": "https://i.ibb.co.com/PZmb6Z8t/robot-7269248-1920.jpg",
+    "subCategory": "Board Games"
+  },
+  {
+    "toyId": 9,
+    "toyName": "Play-Doh 10-Pack of Classic Colors",
+    "sellerName": "Hasbro Play-Doh",
+    "sellerEmail": "support@playdoh.com",
+    "price": 12.99,
+    "rating": 4.8,
+    "availableQuantity": 205,
+    "description": "A pack of colorful Play-Doh modeling compound to encourage creativity and fine motor skills.",
+    "pictureURL": "https://i.ibb.co.com/tMrnrzM2/toi.jpg",
+    "subCategory": "Arts & Crafts"
+  }
+]
