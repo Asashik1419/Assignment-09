@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-
+import { FaStar } from "react-icons/fa";
+import { Link } from 'react-router';
 
 
 const Card = () => {
@@ -26,14 +27,17 @@ const Card = () => {
               <div className="badge badge-secondary">NEW</div>
             </h2>
             <p>{data.description}</p>
-            <p className='card-actions justify-end'>{data.rating}</p>
+            <p className='card-actions justify-end'>{data.rating} <FaStar /></p>
             <div className="card-actions justify-end">
               <div className="badge badge-outline">available: {data.availableQuantity}</div>
               <div className="badge badge-outline">Price: ${data.price}</div>
             </div>
+            
+            <Link to={`/cardDetails/${data.toyId}`}>
             <div className='card-actions justify-center mt-3 rounded-2xl'>
                 <button className='btn btn-primary'>View More</button>
             </div>
+            </Link>
           </div>
         </div>
       ))}

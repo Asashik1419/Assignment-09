@@ -4,6 +4,7 @@ import ErrorPage from '../page/Error/ErrorPage.jsx';
 import Home from '../components/Home/Home.jsx';
 import Card from '../page/Card/Card.jsx';
 import Root from '../components/Root/Root.jsx';
+import CardDetails from '../page/CardDetails/CardDetails.jsx';
 
 
 export const router = createBrowserRouter([
@@ -22,6 +23,11 @@ export const router = createBrowserRouter([
         {
             path: "*" ,
             element: <ErrorPage></ErrorPage>,
+        },
+        {
+            path: '/cardDetails/:id',
+            loader: () => fetch('/jsonData.json'),
+            Component: CardDetails
         }
     ]
     

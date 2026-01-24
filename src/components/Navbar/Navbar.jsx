@@ -1,7 +1,11 @@
 import React from 'react';
 import logo from './../../assets/react.svg'
+import { Link } from 'react-router';
 
 const Navbar = () => {
+  const links = <>
+    <Link to={'/'}><li>Home</li></Link>
+  </>
     return (
         <div className="navbar bg-base-100 shadow-sm">
   <div className="navbar-start">
@@ -12,7 +16,9 @@ const Navbar = () => {
       <ul
         tabIndex="-1"
         className="menu menu-sm dropdown-content bg-base-100 rounded-box  mt-3 w-52 p-2 shadow">
-        <li><a>Home</a></li>
+        {
+          links
+        }
         
         
       </ul>
@@ -21,9 +27,9 @@ const Navbar = () => {
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li className='md:mr-10'><a className='btn btn-ghost'>Home</a></li>
-      
-      <li><a></a></li>
+      {
+        links
+      }
     </ul>
   </div>
   
