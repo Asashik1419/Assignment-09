@@ -23,7 +23,7 @@ const Navbar = () => {
         
       </ul>
     </div>
-    <a className="btn btn-ghost text-sm md:text-xl">ToyTopia</a>
+    <Link to={'/'}><li className="btn btn-ghost text-sm md:text-xl">ToyTopia</li></Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -40,7 +40,7 @@ const Navbar = () => {
     <span>My Profile</span>
   </a>
 </div>
-    <a className='btn btn-primary btn-ghost'>Login</a>
+    <Link to={'/loginPage'}><li className='btn btn-primary btn-ghost'>Login</li></Link>
   </div>
   
 </div>

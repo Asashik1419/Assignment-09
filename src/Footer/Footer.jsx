@@ -6,7 +6,6 @@ const Footer = () => {
     <footer className="bg-black text-white mt-10">
       <div className="container mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
         
-        {/* 1. Logo & Description */}
         <div>
             <h2 ></h2>
           <Link to='/' className="text-2xl font-bold hover:text-green-300">ToyTopia</Link>
@@ -15,7 +14,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* 2. Quick Links */}
         <div>
           <h3 className="font-bold text-lg">Quick Links</h3>
           <ul className="mt-3 space-y-2">
@@ -30,7 +28,7 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link to="/login" className="hover:text-green-300">
+              <Link to="/loginPage" className="hover:text-green-300">
                 Login
               </Link>
             </li>
