@@ -34,15 +34,28 @@ const CardDetails = () => {
                 <p>{description}</p>
             </div>
             <div className='flex mt-10'>
-                <div className=''>
-                    <input className='border-2' type="email" name="" id="" placeholder='Email' />
-                    <input className='border-2' type="text" placeholder='Name' />
-                </div>
-                <div>
-                    <button className='btn'>trey now</button>
-                </div>
+                
+  <div className="hero-content flex-col lg:flex-row-reverse">
+    <div className="text-center lg:text-left">
+      
+    </div>
+    <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+      <div className="card-body w-90">
+        <fieldset className="fieldset">
+            name
+            <label className="label">Name</label>
+          <input type="text" className="input" placeholder="Name" required />
+            {/* email */}
+          <label className="label">Email</label>
+          <input type="email" className="input" placeholder="Email" required />
+          
+          <button className="btn btn-neutral mt-4">Try Now</button>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</div>
             </div>
-        </div>
     );
 };
 
