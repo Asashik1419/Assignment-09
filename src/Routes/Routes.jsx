@@ -7,6 +7,7 @@ import Root from '../components/Root/Root.jsx';
 import CardDetails from '../page/CardDetails/CardDetails.jsx';
 import LoginPage from '../page/LoginPage/LoginPage.jsx';
 import RegisterPage from '../page/RegisterPage/RegisterPage.jsx';
+import PrivateRoute from '../Provider/PrivateRoute.jsx';
 
 
 export const router = createBrowserRouter([
@@ -29,7 +30,9 @@ export const router = createBrowserRouter([
         {
             path: '/cardDetails/:id',
             loader: () => fetch('/jsonData.json'),
-            Component: CardDetails
+            element: <PrivateRoute>
+                <CardDetails></CardDetails>
+            </PrivateRoute>
         },
         {
             path: '/loginPage',

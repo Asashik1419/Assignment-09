@@ -6,13 +6,13 @@ const RegisterPage = () => {
     const {creatUser , setUser} = use (AuthContext);
     const handleRegister=(e)=>{
         e.preventDefault();
-        console.log(e.target);
+        // console.log(e.target);
         const form = e.target;
         const name = form.name.value;
         const photo = form.photo.value;
         const email = form.email.value;
         const password = form.password.value;
-        console.log({name,photo,email,password});
+        // console.log({name,photo,email,password});
         
         if (password.length < 6){
           alert('Password must be at least 6 characters');

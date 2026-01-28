@@ -2,12 +2,16 @@ import React from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import { FaStar } from "react-icons/fa";
 
+const handleSubmit = ()=>{
+  alert('Toy request submitted successfully!')
+}
+
 const CardDetails = () => {
     const {id} = useParams();
     const toyId=parseInt(id);
     const data = useLoaderData();
     const singleCard = data.find(card=>card.toyId===toyId);
-    console.log(data)
+    // console.log(data)
     const {toyName,pictureURL,description,rating,availableQuantity,price,subCategory} = singleCard
     return (
         <div className=' w-[1200px] mx-auto'>
@@ -42,14 +46,14 @@ const CardDetails = () => {
     <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
       <div className="card-body w-90">
         <fieldset className="fieldset">
-            name
+            {/* name */}
             <label className="label">Name</label>
           <input type="text" className="input" placeholder="Name" required />
             {/* email */}
           <label className="label">Email</label>
           <input type="email" className="input" placeholder="Email" required />
           
-          <button className="btn btn-neutral mt-4">Try Now</button>
+          <button onClick={handleSubmit} className="btn btn-neutral mt-4">Try Now</button>
         </fieldset>
       </div>
     </div>
