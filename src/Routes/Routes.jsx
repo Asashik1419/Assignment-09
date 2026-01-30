@@ -8,6 +8,7 @@ import CardDetails from '../page/CardDetails/CardDetails.jsx';
 import LoginPage from '../page/LoginPage/LoginPage.jsx';
 import RegisterPage from '../page/RegisterPage/RegisterPage.jsx';
 import PrivateRoute from '../Provider/PrivateRoute.jsx';
+import Loading from '../page/Loading/Loading.jsx';
 
 
 export const router = createBrowserRouter([
@@ -30,6 +31,7 @@ export const router = createBrowserRouter([
         {
             path: '/cardDetails/:id',
             loader: () => fetch('/jsonData.json'),
+            hydrateFallbackElement: <Loading></Loading>,
             element: <PrivateRoute>
                 <CardDetails></CardDetails>
             </PrivateRoute>

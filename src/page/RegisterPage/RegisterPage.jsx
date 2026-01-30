@@ -1,9 +1,29 @@
 import React, { use } from 'react';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import { AuthContext } from '../../Provider/AuthProvider';
+import { FcGoogle } from "react-icons/fc";
+import { FaGithub } from "react-icons/fa";
+import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+import { auth } from '../../firebase/firebase.config';
+
+
+const googleProvider = new GoogleAuthProvider();
 
 const RegisterPage = () => {
-    const {creatUser , setUser} = use (AuthContext);
+    const {creatUser , setUser, updateUser} = use (AuthContext);
+
+    const navigate = useNavigate();
+
+    const handleGoogleSingIn = () =>{
+      signInWithPopup(auth,googleProvider)
+      .then(result =>{
+        // console.log(result)
+      })
+      .catch(error =>{
+        console.log(error)
+      })
+    }
+
     const handleRegister=(e)=>{
         e.preventDefault();
         // console.log(e.target);
@@ -22,7 +42,15 @@ const RegisterPage = () => {
         .then(result=>{
             const user=result.user;
             // console.log(user);
-            setUser(user);
+            updateUser({displayName:name, photoURL:photo}).then(()=>{
+
+              setUser({...user, displayName:name, photoURL:photo});
+              navigate('/')
+            })
+            .catch((error) => {
+              console.log(error);
+              setUser(user)
+            })
         })
         .catch((error) => {
     const errorCode = error.code;
@@ -49,6 +77,15 @@ const RegisterPage = () => {
           {/* password */}
           <label className="label">Password</label>
           <input name='password' type="password" className="input" placeholder="Password" required />
+
+          <div className='space-y-3 '>
+                          <div>
+                              <button onClick={handleGoogleSingIn} className='btn w-full btn-outline btn-secondary'> <FcGoogle size={24}/> Login with google</button>
+                          </div>
+                          <div>
+                              <button className='btn w-full btn-outline btn-primary'> <FaGithub size={24}/> Login with Github</button>
+                          </div>
+                      </div>
           <button type='submit' className="btn btn-neutral mt-4">Register</button>
           <p className='text-center pt-5 text-[16px]'>Allready Have an account <Link to={'/loginPage'}><span className='text-secondary'>Login?</span></Link></p>
         </fieldset>

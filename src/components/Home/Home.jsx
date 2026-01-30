@@ -6,7 +6,7 @@ import Card from '../../page/Card/Card';
 const Home = () => {
     return (
         <div>
-            <div className='w-250 mx-auto my-3'>
+            <div className='w-11/12 mx-auto my-3'>
                 <Slider></Slider>
             </div>
 

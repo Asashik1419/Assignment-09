@@ -5,7 +5,7 @@ import toy3 from '../../assets/toy-3.jpg'
 
 const Slider = () => {
     return (
-        <div className="carousel h-100 rounded-xl ">
+        <div className="carousel h-100 w-full  rounded-xl ">
   <div id="slide1" className="carousel-item relative w-full">
     <img
       src={toy}

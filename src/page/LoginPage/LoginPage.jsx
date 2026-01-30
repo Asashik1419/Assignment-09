@@ -1,6 +1,4 @@
 import React, { use, useState } from 'react';
-import { FcGoogle } from "react-icons/fc";
-import { FaGithub } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../../Provider/AuthProvider';
 
@@ -52,14 +50,7 @@ const LoginPage = () => {
           placeholder="Password" required />
           <div><a className="link link-hover">Forgot password?</a></div>
 
-            <div className='space-y-3 '>
-                <div>
-                    <button className='btn w-full btn-outline btn-secondary'> <FcGoogle size={24}/> Login with google</button>
-                </div>
-                <div>
-                    <button className='btn w-full btn-outline btn-primary'> <FaGithub size={24}/> Login with Github</button>
-                </div>
-            </div>
+            
 
             {error && <p className='text-red-400 text-xs'>{error}</p>}
 

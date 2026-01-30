@@ -10,12 +10,12 @@ const Card = () => {
         fetch('jsonData.json')
         .then(res=>res.json())
         .then(data => {
-            setAllData(data)
+            setAllData(data);
         })
      })
     return (
 
-       <div className="grid grid-cols-3 gap-4">
+       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {allData.map((data) => (
         <div key={data.toyId} className="card bg-base-100 w-96 shadow-sm">
           <figure className='h-70 px-5'>
